@@ -6,11 +6,15 @@ const ejs = require("ejs");
 var _ = require("lodash");
 const mongoose = require("mongoose");
 const date = require(__dirname + "/date.js");
+// require("dotenv").config();
 
 // let alert = require("alert");
-
+const uri = process.env.DB;
 mongoose
-  .connect(process.env.DB, { useNewUrlParser: true })
+  .connect(
+    "mongodb+srv://admin_avirup:0rug5n3zPlfNfzod@cluster0.rwwzv.mongodb.net/blogpost",
+    { useNewUrlParser: true }
+  )
   .then(() => {
     console.log("successfully connected to database");
   })
