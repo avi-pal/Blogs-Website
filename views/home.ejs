@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+<h1 style="font-weight: bold">Home</h1>
+<br />
+<!-- <p><%= startingContent %></p> -->
+<% posts.forEach(function(post){ %>
+<h3 style="display: inline; font-weight: bold">
+  <%=post.title.substring(0,70)%>
+</h3>
+<h6 style="display: inline"><%=post.date%></h6>
+<p>
+  <%=post.content.substring(0,500)+" ..."%>
+  <a href="/posts/<%=post._id%>">Read More</a>
+  <a href="/delete/<%=post._id%>" style="color: red">Delete Post</a>
+</p>
+<br />
+<%})%> <%- include("partials/footer") -%>

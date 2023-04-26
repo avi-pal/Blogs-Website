@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+
+<h1 style="font-weight: bold">Compose</h1>
+<form action="/compose" method="post">
+  <div class="form-group">
+    <label for="Title">Title</label>
+    <input class="form-control" type="text" name="postTitle" />
+    <br />
+    <label for="Body">Post</label>
+    <textarea
+      class="form-control"
+      name="postBody"
+      id=""
+      cols="30"
+      rows="5"
+    ></textarea>
+    <br />
+    <label for="AccessKey">Access Key</label>
+    <input class="form-control" type="text" name="Accesskey" />
+    <h6 style="color: brown">get your access key from admin</h6>
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+
+<%- include("partials/footer") -%>
