@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://0.0.0.0:27017/blogPost", { useNewUrlParser: true })
+  .connect(
+    "mongodb+srv://admin_avirup:0rug5n3zPlfNfzod@cluster0.rwwzv.mongodb.net/blogpost",
+    { useNewUrlParser: true }
+  )
   .then(() => {
     console.log("successfully connected to database");
   })

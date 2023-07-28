@@ -10,6 +10,7 @@ const date = require(__dirname + "/date.js");
 
 // let alert = require("alert");
 const uri = process.env.DB;
+
 mongoose
   .connect(
     "mongodb+srv://admin_avirup:0rug5n3zPlfNfzod@cluster0.rwwzv.mongodb.net/blogpost",
