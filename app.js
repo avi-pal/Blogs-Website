@@ -35,7 +35,7 @@ const Acckey = new mongoose.model("Acckey", keySchema);
 
 const homeStartingContent = "";
 const aboutContent =
-  "This is the project of Avirup Pal, 3rd Year,GNIT. This ia a Journal  Blog where you can add blog posts";
+  "This is the project of Avirup Pal, 4th Year,GNIT,Kolkata. This ia a Journal  Blog where you can add blog posts";
 const contactContent =
   "Contact admin at avirup150@gmail.com, to add your Blog Post goto /compose P.S.- don't hurry, u need";
 
